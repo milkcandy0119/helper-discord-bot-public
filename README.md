@@ -1,3 +1,4 @@
 # helper-discord-bot
-## any problrm or bug pls dm **milkcandy0119** in discord
-## created by Milkcandy
+## Any problrm or bug pls dm milkcandy0119 in discord
+
+## Created By Milkcandy
