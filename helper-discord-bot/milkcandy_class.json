@@ -1,0 +1,316 @@
+{
+    "class-notion-channel": 1162187693162250260,
+    "bot-test-channel": 944419213668413450,
+    "class": [
+        [
+            {
+                "name": "全民國防教育軍事訓練(一)-國防科技",
+                "classroom": "L301",
+                "teacher": "孫豪",
+                "number": "47"
+            },
+            {
+                "name": "全民國防教育軍事訓練(一)-國防科技",
+                "classroom": "L301",
+                "teacher": "孫豪",
+                "number": "47"
+            },
+            {
+                "name": "程式設計(一)",
+                "classroom": "E411",
+                "teacher": "饒建奇",
+                "number": "102"
+            },
+            {
+                "name": "程式設計(一)",
+                "classroom": "E411",
+                "teacher": "饒建奇",
+                "number": "102"
+            },
+            {
+                "name": "空堂",
+                "classroom": "...",
+                "teacher": "...",
+                "number": "..."
+            },
+            {
+                "name": "微積分",
+                "classroom": "E401",
+                "teacher": "林尚文",
+                "number": "122"
+            },
+            {
+                "name": "微積分",
+                "classroom": "E401",
+                "teacher": "林尚文",
+                "number": "122"
+            },
+            {
+                "name": "微積分",
+                "classroom": "E401",
+                "teacher": "林尚文",
+                "number": "122"
+            },      
+            {
+                "name": "英文(一)",
+                "classroom": "L104",
+                "teacher": "助教",
+                "number": "36"
+            },
+            {
+                "name": "英文(一)",
+                "classroom": "L104",
+                "teacher": "助教",
+                "number": "36"
+            }
+        ],
+        [
+            {
+                "name": "空堂",
+                "classroom": "...",
+                "teacher": "...",
+                "number": "..."
+            },
+            {
+                "name": "空堂",
+                "classroom": "...",
+                "teacher": "...",
+                "number": "..."
+            },
+            {
+                "name": "空堂",
+                "classroom": "...",
+                "teacher": "...",
+                "number": "..."
+            },
+            {
+                "name": "空堂",
+                "classroom": "...",
+                "teacher": "...",
+                "number": "..."
+            },
+            {
+                "name": "基礎電機實驗",
+                "classroom": "E222",
+                "teacher": "周建興",
+                "number": "6"
+            },
+            {
+                "name": "基礎電機實驗",
+                "classroom": "E222",
+                "teacher": "周建興",
+                "number": "6"
+            },
+            {
+                "name": "基礎電機實驗",
+                "classroom": "E222",
+                "teacher": "周建興",
+                "number": "6"
+            },
+            {
+                "name": "線性代數",
+                "classroom": "E513",
+                "teacher": "助教",
+                "number": "45"
+            },      
+            {
+                "name": "線性代數",
+                "classroom": "E513",
+                "teacher": "李世安",
+                "number": "45"
+            },
+            {
+                "name": "線性代數",
+                "classroom": "E513",
+                "teacher": "李世安",
+                "number": "45"
+            }
+        ],
+        [
+            {
+                "name": "邏輯設計",
+                "classroom": "E311",
+                "teacher": "助教",
+                "number": "45"
+            },
+            {
+                "name": "程式設計實務",
+                "classroom": "E231",
+                "teacher": "廖書漢",
+                "number": "50"
+            },
+            {
+                "name": "程式設計實務",
+                "classroom": "E231",
+                "teacher": "廖書漢",
+                "number": "50"
+            },
+            {
+                 "name": "空堂",
+                 "classroom": "...",
+                 "teacher": "...",
+                 "number": "..."
+            },
+            {
+                 "name": "空堂",
+                 "classroom": "...",
+                 "teacher": "...",
+                 "number": "..."
+            },
+            {
+                "name": "網頁程式設計",
+                "classroom": "B218",
+                "teacher": "鍾興臺",
+                "number": "19"
+            },
+            {
+                "name": "網頁程式設計",
+                "classroom": "B218",
+                "teacher": "鍾興臺",
+                "number": "19"
+            },
+            {
+                "name": "線性代數",
+                "classroom": "E307",
+                "teacher": "李世安",
+                "number": "45"
+            },
+            {
+                "name": "微積分",
+                "classroom": "E307",
+                "teacher": "助教",
+                "number": "45"
+            },
+            {
+                "name": "微積分",
+                "classroom": "E307",
+                "teacher": "助教",
+                "number": "45"
+            }
+        ],
+        [
+            {
+                "name": "校園社區服務學習",
+                "classroom": "沒下雨 => 圖書館前方 / 下雨 => 商學大樓一樓",
+                "teacher": "王鵬程",
+                "number": "49"
+            },
+            {
+                "name": "全民國防教育軍事訓練(一)-國防科技",
+                "classroom": "沒下雨 => 圖書館前方 / 下雨 => 商學大樓一樓",
+                "teacher": "王鵬程",
+                "number": "49"
+            },
+            {
+                "name": "邏輯設計",
+                "classroom": "E307",
+                "teacher": "李維聰",
+                "number": "49"
+            },
+            {
+                "name": "邏輯設計",
+                "classroom": "E307",
+                "teacher": "李維聰",
+                "number": "49"
+            },
+            {
+                "name": "空堂",
+                 "classroom": "...",
+                 "teacher": "...",
+                 "number": "..."
+            },
+            {
+                "name": "普通物理",
+                "classroom": "E514",
+                "teacher": "董崇禮",
+                "number": "121"
+            },
+            {
+                "name": "普通物理",
+                "classroom": "E514",
+                "teacher": "董崇禮",
+                "number": "121"
+            },
+            {
+                "name": "電機工程概論",
+                "classroom": "B713",
+                "teacher": "李慶烈",
+                "number": "91"
+            },      
+            {
+                "name": "電機工程概論",
+                "classroom": "B713",
+                "teacher": "饒建奇",
+                "number": "91"
+            },
+            {
+                "name": "空堂",
+                 "classroom": "...",
+                 "teacher": "...",
+                 "number": "..."
+            }
+        ],
+        [
+            {
+                "name": "永續探索(1~9週) / AI與程式語言(10~18週)",
+                "classroom": "E813 / E231",
+                "teacher": "江正雄 / 陳柏翔",
+                "number": "43 / 41"
+            },
+            {
+                "name": "永續探索(1~9週) / AI與程式語言(10~18週)",
+                "classroom": "E813 / E231",
+                "teacher": "江正雄 / 陳柏翔",
+                "number": "43 / 41"
+            },
+            {
+                "name": "英文(一)",
+                "classroom": "B709",
+                "teacher": "劉育全",
+                "number": "36"
+            },
+            {
+                "name": "英文(一)",
+                "classroom": "B709",
+                "teacher": "劉育全",
+                "number": "36"
+            },
+            {
+                "name": "空堂",
+                 "classroom": "...",
+                 "teacher": "...",
+                 "number": "..."
+            },
+            {
+                "name": "程式設計(一)",
+                "classroom": "E231",
+                "teacher": "助教",
+                "number": "102"
+            },
+            {
+                "name": "男、女生體育",
+                "classroom": "iclass 公告為準",
+                "teacher": "林郁偉",
+                "number": "41"
+            },
+            {
+                "name": "男、女生體育",
+                "classroom": "iclass 公告為準",
+                "teacher": "林郁偉",
+                "number": "41"
+            },      
+            {
+                "name": "大學學習(隔周上課)",
+                "classroom": "E401",
+                "teacher": "江正雄 / 李維聰",
+                "number": "41"
+            },
+            {
+                "name": "大學學習(隔周上課)",
+                "classroom": "E401",
+                "teacher": "江正雄 / 李維聰",
+                "number": "41"
+            }
+        ]
+    ]
+}

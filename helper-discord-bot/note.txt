@@ -1,0 +1,469 @@
+bot-token: MTE1NjIwNTA0OTY2ODcwNjQ2NA.GhoVm6.UX2adHWpniRRNEWx9_l1ff63WVKdciR2-ZcvNU
+
+https://hackmd.io/@smallshawn95/python_discord_bot_base
+https://discord.com/developers/applications/1156205049668706464/bot
+https://discordpy.readthedocs.io/en/stable/intro.html
+
+python3 -m pip install -U discord.py
+py -3 -m pip install -U discord.py
+python3 -m pip install -U discord.py[voice]
+
+{
+   // Use IntelliSense to find out which attributes exist for C# debugging
+   // Use hover for the description of the existing attributes
+   // For further information visit https://github.com/OmniSharp/omnishar...
+   "version": "0.2.0",
+   "configurations": [
+       {
+           "name": "Python: Current Dir (external)",
+           "type": "python",
+           "request": "launch",
+           "cwd":"${fileDirname}",
+           "program": "${file}",
+           "console": "externalTerminal",
+           "env": {"PYTHONPATH": "${workspaceRoot}"},
+       },
+       {
+           "name": "Python: Current Dir (internal)",
+           "type": "python",
+           "request": "launch",
+           "cwd":"${fileDirname}",
+           "program": "${file}",
+           "console": "integratedTerminal",
+           "env": {"PYTHONPATH": "${workspaceRoot}"},
+        },
+       {
+            "name": "Python: Current File (Integrated Terminal)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+       }
+   ]
+}
+
+==================
+bot's old codes
+==================
+@bot.command()
+# input % to use "hi"
+async def hi(ctx):
+    await ctx.send("hi~")
+
+@bot.event
+async def on_message(message):
+    # exclude messages from the bot to avoidn loops
+    if message.author == bot.user:
+        return
+    
+    # if new message start with "Hello", reply "Hello!"
+    if message.content.startswith('Hello'):
+        await message.channel.send('Hello!')
+
+    # if new message only have "baka", reply "hentai!"
+    if message.content == "baka":
+        await message.channel.send("hentai!")
+
+#go to cog folder to run .py
+for f in os.listdir("helper/cogs"):
+    if f.endswith(".py"):
+        bot.load_extension("cog" + f[:-3])
+
+@bot.event
+async def on_message(message):
+    # exclude messages from the bot to avoidn loops
+    if message.author == bot.user:
+        return
+    
+    # if new message start with "Hello", reply "Hello!"
+    if message.content.startswith('Hello'):
+        await message.channel.send('Hello!')
+
+    # if new message only have "baka", reply "hentai!"
+    if message.content == "baka":
+        await message.channel.send("hentai!")
+
+#Bot token
+bot.run('MTE1NjIwNTA0OTY2ODcwNjQ2NA.GhoVm6.UX2adHWpniRRNEWx9_l1ff63WVKdciR2-ZcvNU')
+#bot.run('bot-token')
+
+@bot.command()
+# input % to use "hi"
+async def hi(ctx):
+    await ctx.send("hi~")
+
+===============
+      Cog
+===============
+import discord, time, datetime, json
+from discord.ext import commands, tasks
+
+with open('setting.json', mode='r', encoding='utf8') as jfile:
+    jdata = json.load(jfile)
+
+class TaskBase(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+        self.hi.start()
+        self.start_time = time.time()
+
+    def cog_unload(self):
+        self.hi.cancel()
+
+    @tasks.loop(seconds = 1)
+    async def hi(self):
+        execution_time = int(time.time() - self.start_time)
+        print(f"{execution_time}sec: Hello, world!")
+
+async def setup(bot):
+    await bot.add_cog(TaskBase(bot))
+
+const lib = require('lib')({token: process.env.STDLIB_SECRET_TOKEN});
+
+await lib.discord.channels['@0.3.2'].messages.create({
+  "channel_id": `${context.params.event.channel_id}`,
+  "content": "",
+  "tts": false,
+  "embeds": [
+    {
+      "type": "rich",
+      "title": `�W�ҳq��`,
+      "description": "",
+      "color": 0x00FFFF,
+      "fields": [
+        {
+          "name": `�Y�N�}�l - 08:10`,
+          "value": `�ҵ{: �����꨾�Ш|�x�ưV�m(�@) �X�꨾�Ш|\n�ЫǦ�m: L301\n�б�: �]��\n�Ұ�y��: 47`,
+          "inline": true
+        }
+      ]
+    }
+  ]
+});
+
+
+
+"class": {
+        "1": {
+            "class-1": {
+                "name": "�����꨾�Ш|�x�ưV�m(�@)-�꨾���",
+                "classroom": "L301",
+                "teacher": "�]��",
+                "number": "47"
+            },
+            "class-2": {
+                "name": "�����꨾�Ш|�x�ưV�m(�@)-�꨾���",
+                "classroom": "L301",
+                "teacher": "�]��",
+                "number": "47"
+            },
+            "class-3": {
+                "name": "�{���]�p(�@)",
+                "classroom": "E411",
+                "teacher": "�ǫة_",
+                "number": "102"
+            },
+            "class-4": {
+                "name": "�{���]�p(�@)",
+                "classroom": "E411",
+                "teacher": "�ǫة_",
+                "number": "102"
+            },
+            "class-5": {
+                "name": "",
+                "classroom": "",
+                "teacher": "",
+                "number": ""
+            },
+            "class-6": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },
+            "class-7": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },
+            "class-8": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },      
+            "class-9": {
+                "name": "�^��(�@)",
+                "classroom": "L104",
+                "teacher": "�U��",
+                "number": "36"
+            },
+            "class-10": {
+                "name": "�^��(�@)",
+                "classroom": "L104",
+                "teacher": "�U��",
+                "number": "36"
+            }
+        },
+        "2": {
+            "class-1": {
+                "name": "�����꨾�Ш|�x�ưV�m(�@)-�꨾���",
+                "classroom": "L301",
+                "teacher": "�]��",
+                "number": "47"
+            },
+            "class-2": {
+                "name": "�����꨾�Ш|�x�ưV�m(�@)-�꨾���",
+                "classroom": "L301",
+                "teacher": "�]��",
+                "number": "47"
+            },
+            "class-3": {
+                "name": "�{���]�p(�@)",
+                "classroom": "E411",
+                "teacher": "�ǫة_",
+                "number": "102"
+            },
+            "class-4": {
+                "name": "�{���]�p(�@)",
+                "classroom": "E411",
+                "teacher": "�ǫة_",
+                "number": "102"
+            },
+            "class-5": {
+                "name": "",
+                "classroom": "",
+                "teacher": "",
+                "number": ""
+            },
+            "class-6": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },
+            "class-7": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },
+            "class-8": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },      
+            "class-9": {
+                "name": "�^��(�@)",
+                "classroom": "L104",
+                "teacher": "�U��",
+                "number": "36"
+            },
+            "class-10": {
+                "name": "�^��(�@)",
+                "classroom": "L104",
+                "teacher": "�U��",
+                "number": "36"
+            }
+        },
+        "3": {
+            "class-1": {
+                "name": "�����꨾�Ш|�x�ưV�m(�@)-�꨾���",
+                "classroom": "L301",
+                "teacher": "�]��",
+                "number": "47"
+            },
+            "class-2": {
+                "name": "�����꨾�Ш|�x�ưV�m(�@)-�꨾���",
+                "classroom": "L301",
+                "teacher": "�]��",
+                "number": "47"
+            },
+            "class-3": {
+                "name": "�{���]�p(�@)",
+                "classroom": "E411",
+                "teacher": "�ǫة_",
+                "number": "102"
+            },
+            "class-4": {
+                "name": "�{���]�p(�@)",
+                "classroom": "E411",
+                "teacher": "�ǫة_",
+                "number": "102"
+            },
+            "class-5": {
+                "name": "",
+                "classroom": "",
+                "teacher": "",
+                "number": ""
+            },
+            "class-6": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },
+            "class-7": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },
+            "class-8": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },      
+            "class-9": {
+                "name": "�^��(�@)",
+                "classroom": "L104",
+                "teacher": "�U��",
+                "number": "36"
+            },
+            "class-10": {
+                "name": "�^��(�@)",
+                "classroom": "L104",
+                "teacher": "�U��",
+                "number": "36"
+            }
+        },
+        "4": {
+            "class-1": {
+                "name": "�����꨾�Ш|�x�ưV�m(�@)-�꨾���",
+                "classroom": "L301",
+                "teacher": "�]��",
+                "number": "47"
+            },
+            "class-2": {
+                "name": "�����꨾�Ш|�x�ưV�m(�@)-�꨾���",
+                "classroom": "L301",
+                "teacher": "�]��",
+                "number": "47"
+            },
+            "class-3": {
+                "name": "�{���]�p(�@)",
+                "classroom": "E411",
+                "teacher": "�ǫة_",
+                "number": "102"
+            },
+            "class-4": {
+                "name": "�{���]�p(�@)",
+                "classroom": "E411",
+                "teacher": "�ǫة_",
+                "number": "102"
+            },
+            "class-5": {
+                "name": "",
+                "classroom": "",
+                "teacher": "",
+                "number": ""
+            },
+            "class-6": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },
+            "class-7": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },
+            "class-8": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },      
+            "class-9": {
+                "name": "�^��(�@)",
+                "classroom": "L104",
+                "teacher": "�U��",
+                "number": "36"
+            },
+            "class-10": {
+                "name": "�^��(�@)",
+                "classroom": "L104",
+                "teacher": "�U��",
+                "number": "36"
+            }
+        },
+        "5": {
+            "class-1": {
+                "name": "�����꨾�Ш|�x�ưV�m(�@)-�꨾���",
+                "classroom": "L301",
+                "teacher": "�]��",
+                "number": "47"
+            },
+            "class-2": {
+                "name": "�����꨾�Ш|�x�ưV�m(�@)-�꨾���",
+                "classroom": "L301",
+                "teacher": "�]��",
+                "number": "47"
+            },
+            "class-3": {
+                "name": "�{���]�p(�@)",
+                "classroom": "E411",
+                "teacher": "�ǫة_",
+                "number": "102"
+            },
+            "class-4": {
+                "name": "�{���]�p(�@)",
+                "classroom": "E411",
+                "teacher": "�ǫة_",
+                "number": "102"
+            },
+            "class-5": {
+                "name": "",
+                "classroom": "",
+                "teacher": "",
+                "number": ""
+            },
+            "class-6": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },
+            "class-7": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },
+            "class-8": {
+                "name": "�L�n��",
+                "classroom": "E401",
+                "teacher": "�L�|��",
+                "number": "122"
+            },      
+            "class-9": {
+                "name": "�^��(�@)",
+                "classroom": "L104",
+                "teacher": "�U��",
+                "number": "36"
+            },
+            "class-10": {
+                "name": "�^��(�@)",
+                "classroom": "L104",
+                "teacher": "�U��",
+                "number": "36"
+            }
+        }
+    }
+
+        
+    @tasks.loop(seconds = 1)
+    async def count_down(self):
+        now = datetime.datetime.now(self.tz)
+        today = datetime.date.today()
+        channel = self.bot.get_channel(self.channel_id)
+        resuit = today - self.collage
+        # embed = discord.Embed(title="今日課表", color = discord.Color.random())
+        # embed.add_field(name=f"學測倒數",value=f"{resuit.days}",inline=False)
+        await channel.send("123")
+        print(f"系統時間 = {now.hour} : {now.minute} : {now.second}")
